@@ -1,9 +1,18 @@
 # Maintainable Frontend
 
+**Note: This is still work in progress.**
+
 ## Overview
 This project focuses on the maintainability of the frontend code by keeping everything dead simple. In the end we may maintain the frontend app code for many years and being able to make changes easily can be a vital aspect. Write less.
 
+## Current consideration points
+- **Managed libraries**: Let the library to do the job (code generations, caching, state management, etc) as much as as possible
+- **Component structure**: Just have two directories for components, `pages` and `components`. `pages` directory contains page level components that handle states and also binding with the backend, and `components` directory contains reusable components with domain sub-directories such as `user` and `post` (without focus on the granularity unlike Atomic Design, just grouping components under the same domain).
+- **Custom hooks**: Components should import custom hooks from separate files, so the component files become compact and simple, and hooks become reusable and testable
+
 ## Tools and libraries
+
+Tools and libraries that helps with our jobs. The list should change as better alternatives are found.
 
 - **Build tool**: `vite`
 - **Http client/cache**: `react-query`
@@ -11,9 +20,16 @@ This project focuses on the maintainability of the frontend code by keeping ever
 - **State management for the page**: react's `useState`
 - **Form management**: `react-hook-form`
 - **API document/mock server**: `stoplight`
-- **API type**: `OpenAPI Generator`
+- **API client generation**: `orval`
 
-API document and API type generation should ideally be in a separate repository, which should also generate backend types to be imported from backend repositories for their languages.
+API document/client generation should ideally be in a separate repository, which can also generate backend code to be imported from backend repositories in their languages.
+
+## TODO
+
+- Routing
+- CSS
+- Lint
+- Test
 
 ## How to set up Stoplight Studio
 1. Download the desktop app from their [repository](https://github.com/stoplightio/studio/releases)

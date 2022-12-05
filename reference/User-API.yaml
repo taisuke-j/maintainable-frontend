@@ -37,13 +37,17 @@ paths:
                     dateOfBirth: '1997-10-31'
                     emailVerified: true
                     signUpDate: '2019-08-24'
+          headers:
+            header-0:
+              schema:
+                type: string
         '404':
           description: User Not Found
-      operationId: get-users-userId
+      operationId: get-user
       description: Retrieve the information of the user with the matching user ID.
     patch:
       summary: Update User Information
-      operationId: patch-users-userId
+      operationId: patch-user
       responses:
         '200':
           description: User Updated

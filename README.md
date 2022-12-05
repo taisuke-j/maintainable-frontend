@@ -1,9 +1,17 @@
 # Maintainable Frontend
 
-**Note: This is still work in progress.**
+**Note: This is still work in progress.:rocket:**
 
 ## Overview
 This project focuses on the maintainability of the frontend code by keeping everything dead simple. In the end we may maintain the frontend app code for many years and being able to make changes easily can be a vital aspect. Write less.
+
+
+## How to run the sample
+
+```
+nvm use // or use another node.js version manager
+npm i && npm run dev
+```
 
 ## Current consideration points
 - **Managed libraries**: Let the library to do the job (code generations, caching, state management, etc) as much as as possible

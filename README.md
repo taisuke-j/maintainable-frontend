@@ -15,8 +15,9 @@ npm i && npm run dev
 
 ## Current consideration points
 - **Managed libraries**: Let the library to do the job (code generations, caching, state management, etc) as much as as possible
-- **Component structure**: Just have two directories for components, `pages` and `components`. `pages` directory contains page level components that handle states and also binding with the backend, and `components` directory contains reusable components with domain sub-directories such as `user` and `post` (without focus on the granularity unlike Atomic Design, just grouping components under the same domain).
+- **Component structure**: Just have two directories for components, `pages` and `components`. `pages` directory contains page level components that handle states and also binding with the backend, and `components` directory contains sub-directories for each domain such as `user/` and `post/` which contain reusable components (without too much focus on the granularity like Atomic Design, and with more focus on grouping components under the same domain).
 - **Custom hooks**: Components should import custom hooks from separate files, so the component files become compact and simple, and hooks become reusable and testable
+- **Hybrid approach with styling**: Instead of using a UI component library for everything, we could use a zero-runtime CSS in JS library for simple styling, and use feature-specific UI component libraries (from an actively maintained repositories) for complex UI features.
 
 ## Tools and libraries
 
@@ -27,6 +28,7 @@ Tools and libraries that helps with our jobs. The list should change as better a
 - **State management across pages**: `zustand`
 - **State management for the page**: react's `useState`
 - **Form management**: `react-hook-form`
+- **CSS**: `vanilla-extract`
 - **API document/mock server**: `stoplight`
 - **API client generation**: `orval`
 
@@ -35,7 +37,6 @@ API document/client generation should ideally be in a separate repository, which
 ## TODO
 
 - Routing
-- CSS
 - Lint
 - Test
 

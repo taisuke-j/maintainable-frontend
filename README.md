@@ -27,6 +27,7 @@ Tools and libraries that helps with our jobs. The list should change as better a
 - **Http client/cache**: `react-query`
 - **State management across pages**: `zustand`
 - **State management for the page**: react's `useState`
+- **Router**: `wouter`
 - **Form management**: `react-hook-form`
 - **CSS**: `vanilla-extract`
 - **API document/mock server**: `stoplight`
@@ -36,7 +37,6 @@ API document/client generation should ideally be in a separate repository, which
 
 ## TODO
 
-- Routing
 - Lint
 - Test
 

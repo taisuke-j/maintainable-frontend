@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`Simple working test > should render correctly 1`] = `
+<div>
+  <h1>
+    Tom
+  </h1>
+  <p>
+    Email: 
+    tom@example.com
+  </p>
+</div>
+`;

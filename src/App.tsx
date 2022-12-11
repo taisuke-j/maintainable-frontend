@@ -1,6 +1,6 @@
 import { Link, Route } from "wouter";
-import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
-import { UserPage } from './pages/users';
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { UserPage } from "./pages/users";
 
 function App() {
   const queryClient = new QueryClient();
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

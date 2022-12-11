@@ -38,10 +38,6 @@ Tools and libraries that helps with our jobs. The list will change as better alt
 
 API document/client generation should ideally be in a separate repository, which can also generate backend code to be imported from backend repositories in their languages.
 
-## TODO
-
-- Test
-
 ## How to set up Stoplight Studio
 
 1. Download the desktop app from their [repository](https://github.com/stoplightio/studio/releases)
